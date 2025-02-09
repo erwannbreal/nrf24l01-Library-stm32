@@ -127,7 +127,7 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	  uint8_t rx_data[2] = "xx";
 
-	  uint8_t rx = start_Receiving(&my_nrf, rx_data, 100);
+	  uint8_t rx = NRF24_startReceiving(&my_nrf, rx_data, 100);
 	  HAL_Delay(10);
 
 	  if(strcmp(rx_data, "eb") == 0 && rx == 1){
