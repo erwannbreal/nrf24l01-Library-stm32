@@ -127,7 +127,7 @@ uint8_t NRF24_init(nrf24* _nrf24);
 uint8_t NRF24_SendCommand(uint8_t cmd);
 uint8_t NRF24_WriteRegister(uint8_t reg, uint8_t value);
 uint8_t NRF24_ReadRegister(uint8_t reg);
-uint8_t start_Receiving(nrf24* _nrf24, uint8_t* data_buf, uint8_t timeout);
+uint8_t NRF24_startReceiving(nrf24* _nrf24, uint8_t* data_buf, uint8_t timeout);
 uint8_t NRF24_transmit(nrf24* _nrf24, uint8_t *data, uint8_t lenght);
 void flush_TX(void);
 void flush_RX(void);
