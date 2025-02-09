@@ -154,7 +154,7 @@ uint8_t NRF24_ReadRegister(uint8_t reg){
 * Return : Received data; 0=error
 * parameters : nrf24 object, timeout
 */
-uint8_t start_Receiving(nrf24* _nrf24, uint8_t* data_buf, uint8_t timeout){
+uint8_t NRF24_startReceiving(nrf24* _nrf24, uint8_t* data_buf, uint8_t timeout){
 	if(timeout<=0){return 0;} //avoid bugs
 
 	if(_nrf24->mode == RX){
