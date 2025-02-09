@@ -193,3 +193,4 @@ while(1){
 * If you use data pipe 2 - 5, you have to define an address of just one byte, you can use "NRF24_WriteRegister();" function.
 
 ![Addree_and_StarNetwork](https://github.com/erwannbreal/nrf24l01-Library-stm32/blob/main/Schema/Address_and_StarNetwork.png?raw=true)
+![Addree](https://github.com/erwannbreal/nrf24l01-Library-stm32/blob/main/Schema/Address.png?raw=true)
