@@ -33,7 +33,7 @@ nrf24 my_nrf;
 	my_nrf.LNA_gain = LNA_OFF;		//LNA gain 
 	my_nrf.crc_scheme = CRC_1;		//CRC
 ```
-Notes: If you want to change the mode, you juste have to "RX" by "TX"
+Notes: If you want to change the mode, you juste have to change "RX" by "TX"
 <br>
 
 #### RF frequency
