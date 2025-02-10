@@ -121,8 +121,6 @@ typedef struct nrf24_config{
 #define CMD_REFUSE_PAYLOAD 	0xE3 		//Refuse to receive Tx-payload
 //-------------------------------------
 
-//function to add : switch mode (RX<->TX) and switch mode (PWR_UP<->PWR_DW)
-//ajouter le choix sur la fifo que l'on souhaite utiliser dans la config main
 uint8_t NRF24_init(nrf24* _nrf24);
 uint8_t NRF24_SendCommand(uint8_t cmd);
 uint8_t NRF24_WriteRegister(uint8_t reg, uint8_t value);
