@@ -63,7 +63,7 @@ uint8_t NRF24_init(nrf24* _nrf24){
 		HAL_GPIO_WritePin(CSN_GPIO_Port, CSN_Pin, SET);
 		HAL_GPIO_WritePin(CE_GPIO_Port, CE_Pin, RESET);
 
-		uint8_t config = 0x0B | _nrf24->crc_scheme;
+		uint8_t config = 0x0A | _nrf24->crc_scheme;
 		NRF24_WriteRegister(CONFIG, config); 						//Config register
 
 		NRF24_WriteRegister(EN_RXADDR, _nrf24->pipe); 			//enable data pipe
