@@ -241,7 +241,7 @@ uint8_t NRF24_transmit(nrf24* _nrf24, uint8_t *data, uint8_t length){
 			return 0;
 		}
 
-		NRF24_WriteRegister(STATUS, 0x0E); 										//reset status register for next transmission
+		NRF24_WriteRegister(STATUS, 0x2E); 										//reset status register for next transmission
 		return 1;
 	}else{
 		return 0;
